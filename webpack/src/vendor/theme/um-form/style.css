@@ -1,0 +1,26 @@
+.site-wrap .um-row-heading {
+  font-family: "montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: #140e1e;
+  margin-bottom: 11px !important;
+}
+
+.site-wrap .um-field-checkbox input[type="number"],
+.site-wrap .um-field-checkbox input[type="text"] {
+  width: 100% !important;
+  opacity: 1 !important;
+}
+
+.site-wrap .um-field-checkbox .um-field-number .um-field-area,
+.site-wrap .um-field-checkbox .um-field-text .um-field-area {
+  height: 30px !important;
+}
+
+div[class*="js-for-checkbox"] {
+  margin-bottom: 0 !important;
+}
+
+.col-lg-9 > .um-profile {
+  margin-top: -11px;
+}

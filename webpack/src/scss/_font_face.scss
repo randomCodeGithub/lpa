@@ -1,0 +1,187 @@
+@font-face {
+  font-family: mulish;
+  src: url(../fonts/Mulish/Mulish-Medium.ttf);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: mulish;
+  src: url(../fonts/Mulish/Mulish-SemiBold.ttf);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: mulish;
+  src: url(../fonts/Mulish/Mulish-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "lpa-icons";
+  src: url("../fonts/icons/lpa-icons.eot?ql625c");
+  src: url("../fonts/icons/lpa-icons.eot?ql625c#iefix")
+      format("embedded-opentype"),
+    url("../fonts/icons/lpa-icons.ttf?ql625c") format("truetype"),
+    url("../fonts/icons/lpa-icons.woff?ql625c") format("woff"),
+    url("../fonts/icons/lpa-icons.svg?ql625c#lpa-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ic {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "lpa-icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ic--burgermenu-close:before,
+.ic--burgermenu:before {
+  color: #65397f;
+  background: -webkit-linear-gradient(#65397f, #483554);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ic--burgermenu-close:after,
+.ic--burgermenu:after {
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.ic--burgermenu-close:before {
+  content: "\e912";
+}
+
+.ic--burgermenu-close:after {
+  content: "\e913";
+}
+
+.ic--burgermenu:before {
+  content: "\e914";
+}
+
+.ic--burgermenu:after {
+  content: "\e915";
+}
+
+.ic--delete:before {
+  content: "\e911";
+  color: #85838e;
+}
+
+.ic--arrow-right:before {
+  content: "\e90f";
+}
+.ic--arrow-left:before {
+  content: "\e910";
+}
+
+.ic--link:before {
+  content: "\e90e";
+  color: #140e1e;
+}
+
+.ic--private:before {
+  content: "\e90d";
+  color: #85838e;
+}
+
+.ic--public:before {
+  content: "\e90c";
+  color: #85838e;
+}
+
+.ic--profile:before {
+  content: "\e90a";
+  color: rgb(0, 0, 0);
+}
+.ic--profile:after {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.ic--calendar:before {
+  content: "\e909";
+  color: #494450;
+}
+
+.ic--close:before {
+  content: "\e908";
+  color: #85838e;
+}
+
+.ic--arrow-down:before {
+  content: "\e907";
+  color: #494450;
+}
+
+.ic--email:before {
+  content: "\e904";
+  color: #65397f;
+}
+.ic--phone:before {
+  content: "\e905";
+  color: #65397f;
+}
+.ic--waypoint:before {
+  content: "\e906";
+  color: #65397f;
+}
+.ic--checkmark:before {
+  content: "\e902";
+  color: #65397f;
+  background: -webkit-linear-gradient(#65397f, #302149);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ic--checkmark:after {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(251, 251, 255);
+}
+
+.ic--merkis:before {
+  content: "\e900";
+  color: #65397f;
+  background: -webkit-linear-gradient(#65397f, #302149);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ic--merkis:after {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}

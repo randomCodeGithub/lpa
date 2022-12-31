@@ -1,0 +1,93 @@
+.b--text {
+  margin-bottom: 140px;
+}
+
+.b--text .col-lg-7 .text-wrapper {
+  position: relative;
+  padding-left: 34px;
+}
+
+.b--text h2 {
+  margin-bottom: 1.8rem;
+}
+
+.b--text h4 {
+  margin-bottom: 1rem;
+}
+
+.b--text .col-lg-7 .text-wrapper p {
+  padding-right: 130px;
+  margin-bottom: 1rem;
+}
+
+.b--text .col-lg-7 .text-wrapper p:last-child {
+  margin-bottom: 0;
+}
+
+.b--text .col-lg-5 {
+  padding-left: 21px;
+}
+
+.b--text .col-lg-5 .text-wrapper {
+  background: transparent linear-gradient(137deg, #fcfcff 0%, #ebebf2 100%) 0%
+    0% no-repeat padding-box;
+  padding: 34px;
+}
+
+.b--text .text-wrapper.editor p span {
+  font-weight: 500;
+}
+
+.b--text .text-editor + .btn {
+  margin-top: 29px;
+}
+
+.b--text .col-lg-5 i + .text-editor {
+  margin-top: 22px;
+}
+
+.b--text .col-lg-5 .text-wrapper i {
+  font-size: 130px;
+}
+
+@media (max-width: 1099.98px) {
+  .b--text {
+    margin-bottom: 70px;
+  }
+  .b--text .text-wrapper h2 {
+    padding-left: 20px;
+    margin-bottom: 0.9rem;
+    position: relative;
+  }
+
+  .b--text .col-lg-7 .text-wrapper {
+    padding-left: 0;
+  }
+
+  .b--text .col-lg-7 .text-wrapper p {
+    padding-right: 0;
+  }
+  .b--text .col-lg-5 .text-wrapper {
+    padding: 24px 21px 0 17px;
+    margin-top: 30px;
+  }
+
+  .b--text .col-lg-7 .text-wrapper.editor h4,
+  .b--text .col-lg-5 .text-wrapper .text-editor h4:first-child {
+    font-size: 21px;
+    line-height: 33px;
+  }
+
+  .b--text .col-lg-5 .text-wrapper i {
+    font-size: 100px;
+  }
+
+  .b--text .col-lg-5 i + .text-editor {
+    margin-top: 9px;
+  }
+
+  .b--text .text-editor + .btn {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}

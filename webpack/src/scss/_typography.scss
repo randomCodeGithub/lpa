@@ -1,0 +1,317 @@
+body {
+  // font-family: montserrat-regular;
+  font-family: montserrat;
+  color: $c_default;
+}
+
+body,
+.p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.p--small,
+.has-small-font-size {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.has-bigger-font-size {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+a {
+  color: $c_violet_l;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #302149;
+}
+
+a:active {
+  color: #302149;
+}
+
+sub,
+sup {
+  font-size: 60%;
+}
+
+/**
+ * Editor styles
+ */
+
+// General
+.editor > p:last-child,
+.editor > ul:last-child,
+.editor > ol:last-child {
+  margin-bottom: 0 !important;
+}
+
+.editor > p,
+.editor .wp-block-column > p {
+  margin-bottom: 20px;
+}
+
+.editor.p-small > p,
+.editor.p-small .wp-block-column > p {
+  margin-bottom: 10px;
+}
+
+.editor > h4 + ul {
+  margin-top: 23px;
+}
+
+.editor > p + h4 {
+  margin-top: 28px;
+  margin-bottom: 22px;
+}
+
+// Lists
+.editor > ul,
+.editor > ol {
+  margin-bottom: 21px;
+  list-style: none;
+  padding-right: 132px;
+}
+.editor > ol,
+.editor > ol ol {
+  counter-reset: item;
+}
+
+.editor > ul li,
+.editor > ol li {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  font-size: 18px;
+  line-height: 28px;
+}
+.editor > ol li {
+  padding-left: 35px;
+  counter-increment: item;
+}
+.editor > ul > li:last-child,
+.editor > ol > li:last-child {
+  margin-bottom: 0;
+}
+
+.editor > ul li:before {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  font-family: "lpa-icons" !important;
+  content: "\e902";
+  font-size: 34px;
+  background: -webkit-linear-gradient(#65397f, #302149);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 34px;
+  display: flex;
+  align-items: center;
+}
+
+.editor > ul li:after {
+  position: absolute;
+  top: 5px;
+  left: 33px;
+  width: 6px;
+  // height: 6px;
+  // background: $c_dark;
+  border-radius: 50%;
+  // content: '';
+  font-family: "lpa-icons" !important;
+  content: "\e903";
+  margin-left: -1em;
+  color: #fbfbff;
+  font-size: 33px;
+}
+
+.editor > ol li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+// Tables
+.wp-block-table table {
+  width: 100%;
+}
+
+.wp-block-table table,
+.wp-block-table th,
+.wp-block-table td {
+  border: 1px solid $c_dark;
+}
+
+.wp-block-table th,
+.wp-block-table td {
+  padding: 8px 12px;
+}
+.wp-block-table th {
+  border-bottom-width: 3px;
+}
+
+/**
+ * Headings
+ */
+.h1,
+h1 {
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 74px;
+}
+.editor > h1 {
+  margin-bottom: 30px;
+}
+
+.h2,
+h2 {
+  font-family: mulish;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 58px;
+}
+.editor > h2 {
+  margin-bottom: 23px;
+}
+
+.h3,
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+}
+.editor > h3 {
+  margin-bottom: 18px;
+}
+
+.h4,
+h4 {
+  font-family: montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.editor > h4 {
+  margin-bottom: 24px;
+}
+
+.h5,
+h5,
+.h6,
+h6 {
+  font-family: montserrat;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.editor > h5,
+.editor > h6 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: $breakpoint_lg) {
+  .h1,
+  h1 {
+    font-size: 54px;
+    line-height: 68px;
+  }
+  .h2,
+  h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .h5,
+  h5,
+  .h6,
+  h6 {
+    line-height: 33px;
+  }
+
+  .editor > h4 + ul {
+    margin-top: -1px;
+  }
+
+  .editor > ul,
+  .editor > ol {
+    padding-right: 32px;
+  }
+
+  .editor > ul li,
+  .editor > ol li {
+    margin-bottom: 13px;
+  }
+}
+
+/**
+ * Helpers
+ */
+
+// General
+.ta--center,
+.text-center,
+.aligncenter,
+.has-text-align-center {
+  text-align: center;
+}
+.ta--left {
+  text-align: left;
+}
+.ta--right {
+  text-align: right;
+}
+
+// Formating
+.semibold {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+
+.text-decor-none {
+  text-decoration: none !important;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.line-1 {
+  line-height: 1;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Colors
+.c--white {
+  color: #fff;
+}
+.c--default {
+  color: $c_default;
+}
+.c--primary {
+  color: $c_primary;
+}
+.c--secondary {
+  color: $c_secondary;
+}

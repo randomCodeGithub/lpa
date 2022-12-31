@@ -1,0 +1,289 @@
+/**
+ * Images
+ */
+img,
+.img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/**
+ * Backgrounds
+ */
+.bgc--white {
+  background-color: #fff;
+}
+.bgc--primary {
+  background-color: $c_primary;
+}
+.bgc--secondary {
+  background-color: $c_secondary;
+}
+
+.bg--cover {
+  background-size: cover;
+  background-position: center;
+}
+
+/**
+ * Buttons
+ */
+.btn,
+.header-btn a {
+  font-family: mulish;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  padding: 17px 34px;
+  letter-spacing: 0.34px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1 !important;
+  white-space: nowrap;
+  text-decoration: none !important;
+  outline: 4px solid transparent;
+  transition: outline 0.15s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  background: transparent linear-gradient(251deg, #65397f 0%, #47285a 100%) 0%
+    0% no-repeat padding-box;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active {
+    color: #ffffff;
+    background: transparent linear-gradient(247deg, #442f65 0%, #302149 100%) 0%
+      0% no-repeat padding-box;
+  }
+
+  &:active {
+    box-shadow: inset 0px 0px 0px 2px #65397f;
+  }
+}
+.btn[disabled] {
+  cursor: not-allowed;
+}
+
+.btn--white {
+  color: #302149;
+  background: #fff;
+  box-shadow: inset 0px 0px 0px 2px #302149;
+}
+
+// Button styles
+.btn--primary {
+  color: #fff;
+  background-color: $c_primary;
+}
+
+.btn--secondary {
+  color: #fff;
+  background-color: $c_secondary;
+}
+
+// Loading
+.btn.loading {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.btn.loading:after {
+  animation: rotate 1s linear infinite;
+  background: transparent;
+  border: 4px solid #ccc;
+  border-bottom-color: $c_primary;
+  border-radius: 50%;
+  height: 24px;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  z-index: 9999;
+  content: "";
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-btn a {
+  font-size: 0 !important;
+  margin-left: 6px;
+  position: relative;
+  text-shadow: none !important;
+  &:before,
+  &:after {
+    font-family: "lpa-icons" !important;
+    font-size: 52px;
+    position: relative;
+    top: 13px;
+  }
+  &:before {
+    content: "\e90a";
+    background: -webkit-linear-gradient(#65397f, #302149);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &:after {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/**
+ * Aspect ratio
+ */
+.ar-img {
+  width: 100%;
+}
+.ar-img[style*="max-width"] {
+  width: 9999px;
+}
+
+.ar-img__inner {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.ar-img__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+}
+
+.ar {
+  display: block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.ar--1 {
+  padding-bottom: 100%;
+}
+
+/**
+ * Misc. helpers
+ */
+.on-top {
+  position: relative;
+  z-index: 1;
+}
+
+.block-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+
+/**
+ * Margins
+ */
+.mgb--xs {
+  margin-bottom: 8px;
+}
+.mgb--s {
+  margin-bottom: 16px;
+}
+.mgb--m {
+  margin-bottom: 20px;
+}
+.mgb--l {
+  margin-bottom: 40px;
+}
+.mgb--xl {
+  margin-bottom: 60px;
+}
+.mgb--xxl {
+  margin-bottom: 120px;
+}
+
+@media (max-width: $breakpoint_lg) {
+  .mgb-md--xs {
+    margin-bottom: 8px;
+  }
+  .mgb-md--s {
+    margin-bottom: 16px;
+  }
+  .mgb-md--m {
+    margin-bottom: 20px;
+  }
+  .mgb-md--l {
+    margin-bottom: 40px;
+  }
+  .mgb-md--xl {
+    margin-bottom: 60px;
+  }
+  .mgb-md--xxl {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: $breakpoint_md) {
+  .mgb-sm--xs {
+    margin-bottom: 8px;
+  }
+  .mgb-sm--s {
+    margin-bottom: 16px;
+  }
+  .mgb-sm--m {
+    margin-bottom: 20px;
+  }
+  .mgb-sm--l {
+    margin-bottom: 40px;
+  }
+  .mgb-sm--xl {
+    margin-bottom: 60px;
+  }
+  .mgb-sm--xxl {
+    margin-bottom: 120px;
+  }
+}
+
+/**
+* Elements
+*/
+
+.line {
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  top: 0;
+  left: 0;
+  background: transparent linear-gradient(180deg, #65397f 0%, #302149 100%) 0%
+    0% no-repeat padding-box;
+}
+@media (max-width: $breakpoint_lg) {
+  .line {
+    width: 6px;
+  }
+}

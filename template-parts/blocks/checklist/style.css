@@ -1,0 +1,57 @@
+.b--checklist {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  margin-bottom: 140px;
+  background: transparent linear-gradient(126deg, #fcfcff 0%, #ebebf2 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.b--checklist .container {
+  padding: 0 58px;
+}
+
+.b--checklist .col-lg-3,
+.b--checklist .col-lg-4 {
+  border: 1px #dbdadf solid;
+  padding: 24px;
+  padding-bottom: 19px;
+}
+
+.b--checklist h2 {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.b--checklist i {
+  font-size: 68px;
+}
+
+.b--checklist .text-wrapper {
+  margin-top: 15px;
+}
+
+.b--checklist .text-wrapper p span {
+  font-weight: 500;
+}
+
+@media (max-width: 1099.98px) {
+  .b--checklist {
+    padding-top: 70px;
+    padding-bottom: 33px;
+    margin-bottom: 70px;
+  }
+
+  .b--checklist .container {
+    padding: 36px;
+  }
+
+  .b--checklist h2 {
+    text-align: center;
+    margin-bottom: 2.2rem;
+  }
+
+  .b--checklist .col-lg-3,
+  .b--checklist .col-lg-4 {
+    padding: 20px 28px 22px 25px;
+  }
+}

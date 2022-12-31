@@ -1,0 +1,224 @@
+.b--form h1 {
+  padding-left: 34px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.container > .block-title {
+  margin-left: 8px;
+}
+
+.b--form .block-title {
+  margin-bottom: 42px;
+}
+
+.container > .block-title h1 {
+  margin-bottom: 35px;
+}
+
+.b--form .um-login,
+.b--form .um-register {
+  padding: 0 8px;
+  position: relative;
+}
+.b--form .um.um-register:not([class*="uimob"]) {
+  opacity: 1 !important;
+}
+
+.b--form .um.um-register:not([class*="uimob"])::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
+  background-image: url(../../../assets/img/preloader.svg);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+}
+
+.b--form .um-register {
+  margin-top: 53px;
+}
+
+.b--form .um-field-image {
+  margin-bottom: 17px;
+}
+
+.b--form .um-field-textarea {
+  margin-bottom: 20px;
+}
+
+.b--form .um-field-profile_name {
+  margin-bottom: 6px;
+}
+
+.b--form .um-login p {
+  font-family: "mulish";
+  font-size: 14px;
+}
+
+.b--form .um-login .um-row {
+  margin: 0 0 18px 0 !important;
+}
+
+.b--form .um-login .um-left .btn {
+  margin-bottom: 13px;
+}
+
+.b--form .um-login .um-right .btn {
+  margin-top: 12px;
+}
+
+.b--form .um-login .um-field-checkbox-option {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.b--form .um-field-checkbox .um-field-number .um-field-area,
+.b--form .um-field-checkbox .um-field-text .um-field-area {
+  height: 30px !important;
+}
+
+.b--form .um-field-checkbox input[type="number"],
+.b--form .um-field-checkbox input[type="text"] {
+  width: 100% !important;
+  opacity: 1 !important;
+}
+
+.b--form .um-login .um-left,
+.b--form .um-login .um-right {
+  width: 100%;
+}
+
+.b--form .um-login .um-field-checkbox {
+  width: fit-content;
+}
+
+.b--form .um-row-heading {
+  font-family: "montserrat";
+  font-size: 24px;
+  font-weight: 600;
+  color: #140e1e;
+  margin-bottom: 11px !important;
+}
+
+/* RESET PASSWORD */
+
+.um-password .um-field > .um-field-block {
+  display: none;
+}
+
+.um-password .um-field-label + .um-field-label {
+  display: none;
+}
+
+.b--form .um-register div[class*="um-field-noteikums_"] {
+  padding-top: 0;
+  margin-bottom: 16px;
+}
+
+.b--form .um-register div[class*="um-field-noteikums_"] .um-field-label {
+  margin-top: 47px;
+}
+
+.b--form
+  .um-register
+  div[class*="um-field-noteikums_"]
+  .um-field-checkbox-option
+  a {
+  margin-left: 11px;
+  position: relative;
+  top: 2px;
+  text-decoration: none !important;
+}
+
+div[class*="js-for-checkbox"] {
+  margin-bottom: 0 !important;
+}
+
+.b--form .um-register div[class*="um-field-noteikums_"] .um-field-label label {
+  font-weight: 400;
+}
+
+.b--form .um-register div[class*="um-field-noteikums_"] .um-field-label label,
+.b--form .um-register .um-field-Region_of_operation .um-field-label label {
+  font-size: 24px !important;
+}
+
+.b--form .um-register .um-field-Region_of_operation .um-field-label {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1099.98px) {
+  .b--form .um-login .um-row {
+    margin: 0 0 15px 0 !important;
+  }
+
+  .b--form .block-title {
+    margin-bottom: 0;
+  }
+
+  .b--form .um-row-heading {
+    line-height: 34px;
+  }
+
+  .b--form .um-field-textarea {
+    margin-bottom: 6px;
+  }
+
+  .b--form .um-field-textarea:not(.um-field-profile_name) textarea {
+    height: 206px !important;
+  }
+
+  .b--form .um-field-radio .um-field-area .um-field-radio:first-child {
+    margin-bottom: 2px;
+  }
+}
+
+/* PREVIEW IMAGE */
+
+.b--form .image-preview {
+  background-image: url(../../../assets/img/upload-photo-placeholder.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 198px;
+}
+
+.b--form .um .um-single-image-preview > img,
+.b--form .um-single-image-preview a.cancel {
+  display: none;
+}
+
+.b--form .um-field-image .um-field-area > .um-single-image-preview {
+  display: block !important;
+}
+
+.b--form .image-preview .ic--close {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent linear-gradient(247deg, #442f65 0%, #302149 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 50%;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.b--form .image-preview .ic--close:hover {
+  opacity: 1;
+}
+
+.b--form .image-preview .ic--close:before {
+  color: #fff;
+}
